@@ -16,7 +16,8 @@ The goal of this project is to make accessibility checks **clear, visual, and pr
 ## Screenshots
 
 ### Default Contrast Check
-![Default Contrast](./public/picture1.png)![Default Contrast](./public/picture5.png)
+![Default Contrast](./public/picture1.png)
+![Default Contrast](./public/picture5.png)
 
 ### Text Size Evaluation
 ![Text Size Evaluation](./public/picture2.png)
@@ -27,7 +28,7 @@ The goal of this project is to make accessibility checks **clear, visual, and pr
 ### Gradient Contrast Analysis
 ![Gradient Contrast](./public/picture4.png)
 
-> Screenshots are stored in the `screenshots/` directory.
+> Screenshots are stored in the `public/` directory.
 
 ---
 
