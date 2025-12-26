@@ -17,6 +17,7 @@ The goal of this project is to make accessibility checks **clear, visual, and pr
 
 ### Default Contrast Check
 ![Default Contrast](./public/picture1.png)
+
 ![Default Contrast](./public/picture5.png)
 
 ### Text Size Evaluation
