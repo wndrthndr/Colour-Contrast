@@ -16,16 +16,16 @@ The goal of this project is to make accessibility checks **clear, visual, and pr
 ## Screenshots
 
 ### Default Contrast Check
-![Default Contrast](./screenshots/default-contrast.png)
+![Default Contrast](./public/picture1.png)![Default Contrast](./public/picture5.png)
 
 ### Text Size Evaluation
-![Text Size Evaluation](./screenshots/text-size-check.png)
+![Text Size Evaluation](./public/picture2.png)
 
 ### Hover State Validation
-![Hover State](./screenshots/hover-check.png)
+![Hover State](./public/picture3.png)
 
 ### Gradient Contrast Analysis
-![Gradient Contrast](./screenshots/gradient-check.png)
+![Gradient Contrast](./public/picture4.png)
 
 > Screenshots are stored in the `screenshots/` directory.
 
