@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tokens */
+:root{
+  --ratio-size: 92px;
+  --muted: rgba(15,23,42,0.6);
+}
+
+/* page */
+html,body,#root{height:100%}
+body{
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #dbeff3; /* similar pale blue in screenshot */
+  -webkit-font-smoothing:antialiased;
+}
+
+/* big Aa preview */
+.aa-box { width:140px; height:140px; border-radius:12px; border:2px solid #48b68b; display:flex; align-items:center; justify-content:center; }
+.aa-box .aa { font-size:84px; font-weight:800; color:#48b68b; }
+
+/* ratio style */
+.ratio-num { font-size:var(--ratio-size); font-weight:700; color:#111827; line-height:0.9; }
+
+/* hex input look */
+.hex-input {
+  width:100%;
+  font-size:48px;
+  font-weight:700;
+  padding:18px 20px;
+  border-radius:10px;
+  border:3px solid #0b0b0b;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* panel with thick border like screenshot */
+.panel-thick { border:3px solid #0b0b0b; border-radius:10px; padding:14px; background: transparent; }
+
+/* tabs style */
+.tab-list { display:flex; gap:12px; border-bottom:1px solid rgba(0,0,0,0.12); margin-bottom:14px; }
+.tab { padding:10px 14px; font-weight:700; border-radius:8px 8px 0 0; background: transparent; }
+
+/* slider exact look: grey track with black thumb */
+input[type="range"]{
+  -webkit-appearance:none;
+  width:100%;
+  height:6px;
+  background:#c9c9c9;
+  border-radius:6px;
+}
+input[type="range"]::-webkit-slider-runnable-track{ height:6px; background:transparent; border-radius:6px; }
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance:none;
+  width:18px; height:18px; border-radius:50%;
+  background:#000; border:2px solid #000; margin-top:-6px; box-shadow:0 2px 6px rgba(0,0,0,0.25);
+}
+input[type="range"]::-moz-range-thumb { width:18px;height:18px;border-radius:50%; background:#000; border:2px solid #000; }
+
+/* control buttons */
+.btn { background:#000; color:white; padding:12px 18px; border-radius:8px; font-weight:700; }
+
+/* small helpers */
+.small-muted { color: var(--muted); font-size:14px; }
+.badge { background:#000; color:#fff; padding:8px 12px; border-radius:8px; font-weight:700; display:inline-flex; gap:8px; align-items:center; }
+.panel-thick {
+  border: 2px solid var(--ui-border);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.hex-input {
+  border: 2px solid var(--ui-border);
+  color: inherit;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+input[type="range"] {
+  accent-color: var(--ui-border);
+}
+
+.ratio-num {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.border-dynamic {
+  border-color: var(--ui-border);
+}
+/* make react-colorful picker circular and sized nicely */
+.color-wheel {
+  width: 120px;
+  height: 120px;
+  border-radius: 9999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* remove default react-colorful padding so it fits nicely */
+.color-wheel .react-colorful {
+  width: 120px;
+  height: 120px;
+  border-radius: 9999px;
+}
+
+/* tiny responsiveness */
+@media (max-width: 900px) {
+  .color-wheel {
+    width: 96px;
+    height: 96px;
+  }
+  .color-wheel .react-colorful {
+    width: 96px;
+    height: 96px;
+  }
+}
+/* ========================
+   GLOBAL
+======================== */
+body {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+input,
+button {
+  outline: none;
+}
+
+/* ========================
+   PANELS
+======================== */
+.panel-thick {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+/* ========================
+   COLOR INPUT
+======================== */
+.hex-input {
+  width: 100%;
+  font-size: 42px;
+  font-weight: 800;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 3px solid black;
+  background: transparent;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ========================
+   TABS (RGB / HSL)
+======================== */
+.tab-row {
+  display: flex;
+  gap: 0;
+  margin-bottom: -3px;
+}
+
+.tab {
+  border: 3px solid black;
+  padding: 8px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: none;
+  background: transparent;
+}
+
+.tab.active {
+  background: black;
+  color: white;
+}
+
+/* ========================
+   SLIDERS
+======================== */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: currentColor;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 26px;
+  height: 26px;
+  background: currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ========================
+   RGB LABELS
+======================== */
+.rgb-label {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* ========================
+   COPY ICON
+======================== */
+.copy-icon {
+  transform: scale(1.3);
+}
+
+/* ========================
+   SECTION HEADINGS
+======================== */
+.section-title {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* ========================
+   BADGES
+======================== */
+.badge {
+  border: 3px solid black;
+  padding: 12px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: 800;
+}
+
+
