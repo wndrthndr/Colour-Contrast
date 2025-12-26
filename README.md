@@ -115,8 +115,8 @@ All contrast calculations follow WCAG-recommended formulas without third-party l
 ## Running the Project Locally
 
 ```bash
-git clone https://github.com/your-username/color-contrast-checker.git
-cd color-contrast-checker
+git clone https://github.com/wndrthndr/Colour-Contrast
+cd color-contrast-clone-vite4
 npm install
 npm run dev
 ****
